@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset = "utf-8" /> 
+	  <meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Google</title>
+	<link rel = "icon" href =  
+"https://cdn.icon-icons.com/icons2/2119/PNG/512/google_icon_131222.png" 
+        type = "image/x-icon">
+
+<style type=text/css>
+.full{
+	font-family: Arial, Helvetica, sans-serif;
+	/*scroll-behavior: unset;*/
+
+}
+.top{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	background-color:;
+	padding-top: 10px;
+	width:100%;
+	height:70px;
+	/*background-color:grey;*/
+	overflow: auto;
+	display: flex;
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+body{
+	margin:0px;
+}
+
+.gmail{
+	color: #212121;
+	position: absolute;
+	float:right;
+	right:20%;
+	height:40px;
+	width:50px;
+	/*border: solid;	*/
+	padding-top: 15px; 
+	font-size:14px;
+}
+.images{
+	color: #212121;
+	position: absolute;
+	float:right;
+	right: 15%;
+	height:40px;
+	width:50px;
+	/*border: solid;	*/
+	padding-top: 15px; 
+	font-size:14px;
+	/*font-weight: 100;*/
+}
+a.gmaillink:link,a.imageslink:link{
+	color: black;
+	text-decoration: none;
+}
+a.gmaillink:hover,a.imageslink:hover
+{
+
+	color:A3A3A3;
+	text-decoration: underline;
+}
+.signinbutton{
+	background-color:#4585F0;
+	margin-top: 10px;
+	height:30px;
+	padding:5px;
+	width:70px;
+	border: 0px;
+	color: white;
+	/*float:right;
+	align-items: right;
+	*/
+	border-radius:5%; 
+	position: absolute;
+	right:3.5%;
+	font-weight: bold;
+
+
+}
+a.sigininlink:link
+{
+	text-decoration: none;
+	color: white;
+}	
+a.sigininlink:hover
+{
+	text-decoration: none;
+	color: white;
+}
+a.sigininlink:visited
+{
+	text-decoration: none;
+	color: white;
+}
+button {
+  /*background: #ededed;*/
+  /*border: 1px solid #ccc;*/
+  /*padding: 10px 30px;*/
+  border-radius: 3px;
+  cursor: pointer;
+}
+.googleapps{
+	margin-top: 12px;
+	height:20px;
+	width:20px;
+	position: absolute;
+	right:12%;
+}
+
+.main{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	/*margin-top:15%; */
+	padding-top: 161px;
+/*	height: 92px;*/
+	/*width:"372";*/
+
+}
+/*html { overflow-y: hidden; }*/
+
+.inp
+{
+	border:1px solid #dfe1e5;
+	border-radius: 24px;
+	height:44px;
+	width:482px ;
+	display: flex;
+}
+.searchimg{
+	margin-left: 20px;
+	height:44px;
+}
+.voice{
+		padding-top: 10PX;
+		position: relative;
+		padding-right:10px;
+		height: 20px;
+		width:20px;
+}
+.search
+{	
+	padding-left:5px; 
+	margin:2.5px;
+	height: 35px;
+	width:390px;
+	border: none;
+	outline: none;
+	font-size:20px;
+}
+
+.buttonpannel
+{	
+	height: 50px;
+	width: 100%;	
+	margin-top: 30px
+}
+.googlesearch
+{
+	position: absolute;
+	right:52%;
+	height: 40px;
+	width:130px;
+	border: none;
+	background-color: #F3F3F3;
+	color: #5F637E;
+	font-size: 15px;
+	border-radius: 5px
+}
+.googlesearch:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border: 1px solid;
+}
+.feelingspecial
+{		
+	border-radius: 5px;
+	position: absolute;
+	left:52%;
+	height: 40px;
+	width:130px;
+	border: none;
+	background-color: #F3F3F3;
+	color: #5F637E;
+	font-size: 15px;
+}
+.feelingspecial:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border: 1px solid;
+}
+.inp:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border: 1px solid;
+}
+
+input[type=text].search:focus{
+	border: none;
+	outline: none;
+}
+input[type=text].search:active{
+	border: none;
+	outline: none;
+}
+.langu{
+	position: relative;	
+	display: flex;
+	padding:15px;
+	padding-right: 0px; 
+	font-size: 15px;
+	left:25%;
+	width:60%;
+}
+.langlink
+{
+	font-size: 12px;
+	margin: 5px;
+	margin-top:0px; 
+
+}
+a.langlink:link
+{
+	text-decoration: none;
+}
+a.langlink:hover
+{
+	text-decoration: underline;
+}
+.footerr
+{
+	background-color: #F2F2F2;
+	height:30px;
+	width:100%;
+	/*position: sticky;*/
+	/*bottom: 0;	*/
+}
+.foot{
+	background-color: #F2F2F2;
+	/*width: 100%;*/
+	height: 15px;
+	border-top : 1px solid;
+	border-bottom:  : 1px solid;
+	border-color: #E4E4E4;
+	padding: 10px;
+	padding-left: 40px; 
+	color: #818488;
+	border-bottom: #E4E4E4;
+	/*font-family: */
+	padding-right: 0px;
+	/*position: fixed;*/
+	/*position/: sticky;*/
+	/*bottom:2%;	*/
+}
+
+.foot1{
+	background-color: #F2F2F2;
+	/*width: 100%;*/
+	height: 15px;
+	border-top : 1px solid;
+	border-bottom:  : 1px solid;
+	border-color: #E4E4E4;
+	padding: 10px;
+	padding-left: 40px; 
+	color: #818488;
+	border-bottom: #E4E4E4;
+	/*font-family: */
+	padding-right: 0px;
+	/*position: fixed;*/
+	/*position: sticky;*/
+	/*bottom: 0;*/
+	/*top:90;	*/
+}
+
+
+.footlink
+{
+	/*font-size: 12px;*/
+	margin: 5px;
+	margin-top:0px; 
+	color: #818488;
+}
+a.footlink2:link
+{
+	text-decoration: none;
+}
+a.footlink2:hover
+{
+	text-decoration: underline;
+}
+.footlink2
+{
+	/*font-size: 12px;*/
+	margin: 5px;
+	margin-top:0px; 
+	color: #818488;
+	position: relative;
+	float: right;
+}
+a.footlink:link
+{
+	text-decoration: none;
+}
+a.footlink:hover
+{
+	text-decoration: underline;
+}
+
+/*.scrolll{*/
+	/*overflow-y: scroll;*/
+/*}*/
+
+
+
+.mainfooter{     
+     position: sticky; 
+     bottom: 0;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div class="full">
+	<div class="scrolll">
+<div class="top">
+	<h7 class="gmail"><a href="https://mail.google.com/mail/?tab=wm&ogbl" class="gmaillink" >Gmail </a></h7>
+	
+	<h7 class="images"><a href="https://www.google.co.in/imghp?hl=en&tab=wi&ogbl" class="imageslink">Images </a></h7>
+	<a><img src="https://cdn3.iconfinder.com/data/icons/faticons/32/grid-2-01-512.png" class="googleapps"></a>
+	<button class="signinbutton"><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.co.in/" class="sigininlink">Sign in</button></a>
+
+</div>
+
+<div class="main">
+	<img src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272" height:"92"><br>
+
+	<div class="inp">
+	<svg class="searchimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="24" height="24"
+viewBox="0 0 171 171"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal " ><path d="M0,171.99612v-171.99612h171.99612v171.99612z" fill="none"></path><g fill="#95a5a6"><path d="M64.125,14.25c-27.46081,0 -49.875,22.41419 -49.875,49.875c0,27.46081 22.41419,49.875 49.875,49.875c12.45449,0 23.83319,-4.64533 32.59131,-12.24609l3.03369,3.03369v9.2124l42.75,42.75l14.25,-14.25l-42.75,-42.75h-9.2124l-3.03369,-3.03369c7.60076,-8.75812 12.24609,-20.13682 12.24609,-32.59131c0,-27.46081 -22.41419,-49.875 -49.875,-49.875zM64.125,28.5c19.75953,0 35.625,15.86546 35.625,35.625c0,19.75953 -15.86547,35.625 -35.625,35.625c-19.75954,0 -35.625,-15.86547 -35.625,-35.625c0,-19.75954 15.86546,-35.625 35.625,-35.625z" ></path></g></g></svg>
+	<input type=text class="search">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png" height=15px width=15px class="voice">
+</div>
+</div>
+<div class="buttonpannel">
+	<input type="submit" name="googlesearch" class="googlesearch" value="Google Search">
+	<input type="button" name="feelingspecial" class="feelingspecial" value="I'm Feeling Lucky"></button>
+</div>
+<div class="langu">
+	Google offered in: <a class="langlink" href="https://www.google.co.in/setprefs?sig=0_cKM6B9iFwcxc29vsVunP0tN2FkE%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiZgNnavPfpAhVVeH0KHRD-At8Q2ZgBCA8">हिन्दी</a> <a class="langlink" href="https://www.google.co.in/setprefs?sig=0_cKM6B9iFwcxc29vsVunP0tN2FkE%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiZgNnavPfpAhVVeH0KHRD-At8Q2ZgBCBA">বাংলা</a> <a class="langlink" href="https://www.google.co.in/setprefs?sig=0_cKM6B9iFwcxc29vsVunP0tN2FkE%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiZgNnavPfpAhVVeH0KHRD-At8Q2ZgBCBE">తెలుగు</a> <a class="langlink" href="https://www.google.co.in/setprefs?sig=0_cKM6B9iFwcxc29vsVunP0tN2FkE%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiZgNnavPfpAhVVeH0KHRD-At8Q2ZgBCBI">मराठी </a><a class="langlink" href="https://www.google.co.in/setprefs?sig=0_cKM6B9iFwcxc29vsVunP0tN2FkE%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiZgNnavPfpAhVVeH0KHRD-At8Q2ZgBCBM">தமிழ்</a> <a class="langlink" href="https://www.google.co.in/setprefs?sig=0_cKM6B9iFwcxc29vsVunP0tN2FkE%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiZgNnavPfpAhVVeH0KHRD-At8Q2ZgBCBQ">ગુજરાતી </a><a class="langlink" href="https://www.google.co.in/setprefs?sig=0_cKM6B9iFwcxc29vsVunP0tN2FkE%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiZgNnavPfpAhVVeH0KHRD-At8Q2ZgBCBU">ಕನ್ನಡ</a> <a class="langlink" href="https://www.google.co.in/setprefs?sig=0_cKM6B9iFwcxc29vsVunP0tN2FkE%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiZgNnavPfpAhVVeH0KHRD-At8Q2ZgBCBY">മലയാളം </a><a class="langlink" href="https://www.google.co.in/setprefs?sig=0_cKM6B9iFwcxc29vsVunP0tN2FkE%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiZgNnavPfpAhVVeH0KHRD-At8Q2ZgBCBc">ਪੰਜਾਬੀ</a>
+</div></div>
+<footer class="main footer">
+<div class="footerr">
+	<div class="foot">India</div>
+	<div class="foot1"> <a class="footlink" href="https://www.google.co.in/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a> <a class="footlink" href="https://www.google.co.in/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a><a class="footlink" href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1"> About</a><a class="footlink" href="https://google.com/search/howsearchworks/?fg=1"> How Search Works</a>
+	<a class="footlink2" href="https://policies.google.com/privacy?fg=1">Privacy</a><a class="footlink2" href="https://policies.google.com/terms?fg=1">Terms</a><a class="footlink2" href="https://www.google.co.in/preferences?hl=en">Settings</a>
+
+
+
+	</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
